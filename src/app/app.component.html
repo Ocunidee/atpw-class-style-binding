@@ -1,14 +1,14 @@
 <ol>
   <li>
-    <span class="ghost">👻︎</span>
+    <span class="ghost" [class]="ghost1.anim" [style]="ghost1.style">👻︎</span>
     I'm ghost1, joyful and red
   </li>
   <li>
-    <span class="ghost">👻︎</span>
+    <span class="ghost" [class]="ghost2.anim" [style]="ghost2.style">👻︎</span>
     I'm ghost2, jelly and green
   </li>
   <li>
-    <span class="ghost">👻︎</span>
+    <span class="ghost" [class.wobbly]="ghost3.isWobbly" [style.color]="ghost3.isBlue ? 'blue' : ''">👻︎</span>
     I'm ghost3, wobbly and blue
   </li>
 </ol>
