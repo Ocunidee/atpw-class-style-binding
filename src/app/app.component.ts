@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, signal } from '@angular/core'
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,7 @@ import { Component } from '@angular/core'
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  ghost1 = { anim: 'joyful', style: 'color: red' }
-  ghost2 = { anim: { jelly: true }, style: { color: 'green' }}
-  ghost3 = { isWobbly: true, isBlue: true }
+  protected readonly ghost1 = signal({ anim: 'joyful', style: 'color: red' })
+  protected readonly ghost2 = signal({ anim: { jelly: true }, style: { color: 'green' }})
+  protected readonly ghost3 = signal({ isWobbly: true, isBlue: true })
 }
